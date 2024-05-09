@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*@import url('https://db.onlinewebfonts.com/c/975a5a4b60d2801c3382561ee634109b?family=Hypermarket+W00+Regular');*/ /* uncomment when release */
+@import url('https://fonts.googleapis.com/css2?family=Linefont:wght@4..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root {
+    --accent: #eb144c;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+h1.title {
+    font-family: "Cinzel", serif !important;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+*:not(.fa-solid) {
+    /*font-family: "Rubik", sans-serif;*/
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 90vw;
+}
+
+nav {
+    user-select: none;
+}
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    height: 60px;
+    border: 0.5px solid rgb(238, 238, 238);
+}
+#date {
+    font-weight: 800;
+    text-align: center;
+}
+.navcontainer.lower {
+    font-size: 10px;
+    height: 30px;
+    transform: translateY(-1px);
+}
+.side {
+    width: 200px;
+}
+
+.page {
+    margin: 20px;
+}
+
+.btn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.btn:hover {
+    transition: 0.3s;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px;
+}
+.story hr {
+    width: 100%;
+    border-color: rgb(197, 197, 197);
+    color: rgb(197, 197, 197);
+}
+.storyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.story .left {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+.story .desc {
+    filter: opacity(65%);
+    font-size: 1.9vw;
+}
+.story .extra {
+    filter: opacity(50%);
+    font-size: 1vw;
+}
+.story .title {
+    font-weight: 900;
+    font-size: 2vw;
+}
+.story:hover {
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
+.story:hover .title {
+    color: var(--accent);
+    text-decoration: underline;
+}
+.story .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.story img {
+    width: 100%;
+    max-width: 200vw;
+    border-radius: 5px;
+}
+.story .right .author {
+    filter: opacity(40%);
+    font-size: 1.5vw;
+}
+.story .breaking {
+    font-weight: 900;
+    color: var(--accent);
+    font-size: 2.2vw;
+}
+.between {
+    width: 10px;
+}
+.doublestory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.doublestory .story {
+    max-width: 100%;
+}
+.doublestory .story .title {
+    font-size: 2vw;
+}
+.doublestory .desc {
+    font-size: 1.5vw !important;
+}
+.doublestory .story .left {
+    width: 100%;
+}
+.doublestory img {
+    max-width: 30vw;
+}
+
+footer {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+    user-select: none;
+}
+footer .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+}
+.container .sec {
+    width: 100%;
+    text-align: left;
+}
+
+@media screen and (min-width:1000px) {
+
+    .story img {
+        max-width: 40vw;
+    }
+    .author {
+        font-size: 0.8vw !important;  
+    }
+
+}
+@media screen and (max-width:1000px) {
+
+    nav .title {
+        font-size: 20px;
+    }
+    nav .lower span {
+        font-size: 8px !important;
+    }
+    #date {
+        width: 100px;
+    }
+}
