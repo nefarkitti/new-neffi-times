@@ -22,6 +22,9 @@ h1.title {
     font-size: 30px;
     font-weight: 900;
 }
+h1.title:hover {
+    cursor: pointer;
+}
 
 *:not(.fa-solid) {
     /*font-family: "Rubik", sans-serif;*/
@@ -41,7 +44,7 @@ nav {
     align-items: center;
     padding: 0px 30px;
     height: 60px;
-    border: 0.5px solid rgb(238, 238, 238);
+    border: 0.5px solid rgb(224, 224, 224);
 }
 #date {
     font-weight: 800;
@@ -158,6 +161,9 @@ nav {
 .doublestory .story .left {
     width: 100%;
 }
+.doublestory .story .extra {
+    font-size: 0.8vw;
+}
 .doublestory img {
     max-width: 30vw;
 }
@@ -186,6 +192,25 @@ footer .container {
     text-align: left;
 }
 
+.headline {
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 900;
+}
+.news img {
+    max-width: 100%;
+}
+.newsimg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.content {
+    font-weight: 600;
+    font-size: 1vw;
+}
+
 @media screen and (min-width:1000px) {
 
     .story img {
@@ -193,6 +218,15 @@ footer .container {
     }
     .author {
         font-size: 0.8vw !important;  
+    }
+    main {
+        width: 80vw !important;
+    }
+    .doublestory .desc {
+        font-size: 1vw !important;
+    }
+    .doublestory .title {
+        font-size: 1.6vw !important;
     }
 
 }
@@ -206,5 +240,9 @@ footer .container {
     }
     #date {
         width: 100px;
+    }
+    .content {
+        font-weight: 600;
+        font-size: 3vw;
     }
 }
